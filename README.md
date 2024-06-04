@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to use
+- This project does not provide the API server with it. You can host an API server or use myjsonAPI or something like that which returns the response and use this repo with it
+- do `npm install --legacy-peer-deps`
+- do `npm start` and this should be good to go
+
 ## Available Scripts
 
 In the project directory, you can run:
