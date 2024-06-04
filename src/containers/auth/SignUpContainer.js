@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { USERS } from '../../constants/entity';
 import * as crudAction from '../../actions/crudAction';
+import * as authAction from '../../actions/authAction';
+import * as authService from '../../services/authService';
 
 // Import custom components
 import SignUpForm from '../../components/auth/SignUpForm';
@@ -21,7 +23,7 @@ class SignUpContainer extends Component {
    * @param {object} formProps
    */
   submitForm(formProps) {
-    this.props.actions.submitForm(USERS, formProps);
+    this.props.actions.signup(formProps);
   }
 
   render() {
@@ -33,7 +35,7 @@ class SignUpContainer extends Component {
  * Map the actions to props.
  */
 const mapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(Object.assign({}, crudAction), dispatch),
+  actions: bindActionCreators(Object.assign({}, authService), dispatch),
 });
 
 export default connect(null, mapDispatchToProps)(SignUpContainer);

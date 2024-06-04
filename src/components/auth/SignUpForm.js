@@ -44,11 +44,11 @@ const SignUpForm = (props) => {
         <CardHeader className={classes.cardHeader} title="Sign Up" />
         <CardContent>
           <form method="post" onSubmit={handleSubmit(onSubmit)}>
-            <Field type="text" name="first_name" component={renderText} label="First Name" />
+            <Field type="text" name="name" component={renderText} label="First Name" />
             <br />
             <Field type="text" name="last_name" component={renderText} label="Last Name" />
             <br />
-            <Field type="text" name="email" component={renderText} label="Email" />
+            <Field type="text" name="username" component={renderText} label="Email" />
             <br />
             <Field type="password" name="password" component={renderText} label="Password" />
             <br />
