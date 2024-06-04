@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { USERS } from '../../constants/entity';
-import * as crudAction from '../../actions/crudAction';
-import * as authAction from '../../actions/authAction';
 import * as authService from '../../services/authService';
 
 // Import custom components

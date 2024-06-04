@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Import custom components
-import Dashboard from '../../components/dashboard/Dashboard';
+import Dashboard from '../../components/dashboard2/Dashboard';
 
 class DashboardContainer extends Component {
   constructor(props) {

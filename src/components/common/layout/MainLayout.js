@@ -43,10 +43,10 @@ const MainLayout = (props) => {
     <div className={classes.root}>
       <div className={classes.appFrame}>
         <Header navDrawerOpen={open} handleToggleDrawer={handleToggle} />
-        <MiniDrawer navDrawerOpen={open} />
+        {/* <MiniDrawer navDrawerOpen={open} /> */}
         <main className={classes.content}>{children}</main>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
